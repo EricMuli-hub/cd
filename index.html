@@ -1,0 +1,46 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Attest – Academic credentials, attested</title>
+<meta name="description" content="Institutions issue. Owners confirm. Anyone can verify. Diplomas, certificates and degrees from every recognised school, college and university.">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/styles.css"></head><body>
+<nav class="top"><a class="logo" href="index.html"><span id="mk"></span>Attest</a><div class="l"><a href="#how">How it works</a><a href="#roles">Who it's for</a><a href="#see">What you'll see</a><a href="#pricing">Plans</a><a class="btn o sm" href="role.html?mode=signin">Sign in</a><a class="btn sm" href="role.html?mode=signup">Create account</a></div></nav>
+<header class="hero"><div class="w"><div><div class="eyebrow">Academic credential registry</div><h1>Every diploma, certificate and degree. Proven in seconds.</h1>
+<p class="lead">Schools, colleges and universities issue credentials once. Owners confirm them with a one-time code. Anyone who needs proof can verify them and print the result.</p>
+<a class="btn g" href="auth.html?role=admin&mode=signup">Register your institution</a> <a class="btn o" href="auth.html?role=employer&mode=signup">I need to verify a credential</a>
+<p style="margin-top:18px;font-size:14px;color:var(--mute)">Already a member? <a href="role.html?mode=signin">Sign in</a> · Own a credential? <a href="auth.html?role=student&mode=signup">Create your account</a></p></div>
+<div class="stage" aria-hidden="true"><div class="cert"><h4>Kingsway University</h4><p style="margin-top:12px">is attested to have awarded</p><h3>Amina Otieno</h3><p>the Degree of</p><h3 style="font-size:18px">BSc Computer Science</h3><p>Second Class Upper</p><div style="margin-top:12px" id="s1"></div></div>
+<div class="rep"><b class="big">Genuine</b><div style="font-size:12px;color:var(--mute);margin:2px 0 8px">Verification report</div><div class="r"><span>Issued by</span><span>Kingsway University</span></div><div class="r"><span>Owner confirmed</span><span>Yes</span></div><div class="r"><span>Checked by</span><span>Acme Labs</span></div></div></div></div></header>
+
+<section class="s" id="how"><div class="w"><h2>How a credential travels</h2><p class="lead">Five steps from the institution's desk to a verified printout. Nothing here needs technical knowledge.</p>
+<div class="steps"><div><h3>Institution registers</h3><p>It signs up with its registration number and picks a plan. Only registered institutions can issue.</p></div><div><h3>Institution issues</h3><p>It enters the owner's full details. Attest seals the record and creates a one-time code.</p></div><div><h3>Owner confirms</h3><p>The owner registers with the same details the institution holds, then enters the code to claim it.</p></div><div><h3>Owner shares</h3><p>The owner hands out a share code, chooses who sees details, and can request an approved hardcopy.</p></div><div><h3>Anyone verifies</h3><p>A subscribed verifier checks the code and prints a report: genuine or not.</p></div></div></div></section>
+
+<section class="s alt" id="roles"><div class="w"><h2>Who uses Attest</h2><p class="lead">Each role has its own sign-up, because each one needs to prove something different.</p><div class="grid" id="rl"></div></div></section>
+
+<section class="s" id="see"><div class="w"><h2>What you will see</h2><p class="lead">Clear outcomes, on screen and on paper.</p>
+<div class="grid"><div class="card" style="border-top:5px solid var(--ok)"><h3 style="color:var(--ok)">Genuine</h3><p>The code is on the ledger and unaltered. You see the issuing institution and whether the owner confirmed it.</p></div>
+<div class="card" style="border-top:5px solid var(--bad)"><h3 style="color:var(--bad)">Not genuine</h3><p>No record matches the code, or the institution has revoked the credential. The report says so plainly.</p></div>
+<div class="card" style="border-top:5px solid var(--gold)"><h3 style="color:var(--warn)">Under review</h3><p>The integrity monitor held an unusual record for a human check. It is not trusted until a regulator clears it.</p></div>
+<div class="card" style="border-top:5px solid var(--ac)"><h3>Regulator dashboards</h3><p>Daily activity, risk scores, late-night clusters, institution comparisons and written findings, with an event log you can export.</p></div></div></div></section>
+
+<section class="s alt"><div class="w"><h2>Built to be trusted</h2><p class="lead">The protections behind every check.</p>
+<div class="grid"><div class="card"><h3>Tamper-proof records</h3><p>Every credential gets a unique cryptographic fingerprint on a shared ledger. Change one letter and the fingerprint no longer matches.</p></div>
+<div class="card"><h3>No single point of failure</h3><p>Records live on a distributed storage network rather than one server, so an outage or an attack on one machine cannot erase them.</p></div>
+<div class="card"><h3>Strict roles</h3><p>Institutions issue. Owners control access. Verifiers check. Regulators audit. Anything outside a role is blocked and logged.</p></div>
+<div class="card"><h3>Integrity monitor</h3><p>An AI-assisted monitor scores every event and flags forgery patterns such as late-night bursts or repeated lookups of fake codes.</p></div>
+<div class="card"><h3>Private by design</h3><p>Only fingerprints are public. Owners decide who sees details and can erase their private file, in line with data-protection rules.</p></div>
+<div class="card"><h3>Fast and scalable</h3><p>A check is a single lookup, with no waiting on a registrar. Plans scale from a small school to a national system.</p></div></div></div></section>
+
+<section class="s" id="pricing"><div class="w"><h2>Simple plans</h2><p class="lead">Prototype pricing. No payments are taken in this version.</p><div class="grid" id="pp"></div></div></section>
+
+<section class="s alt"><div class="w"><h2>Questions</h2>
+<details><summary>Can a student register before their institution?</summary><p>No. The institution must be registered on Attest first, because owners pick it from the registered list. This guarantees every credential can be verified.</p></details>
+<details><summary>How does an owner get their credential?</summary><p>When the institution issues it, Attest creates a one-time code. The owner registers with the same details the institution holds and enters the code.</p></details>
+<details><summary>Who can verify?</summary><p>Anyone with a verifier account: employers, schools deciding on admission, scholarship and licensing bodies, authorities or individuals. A plan is required, and each check can be printed.</p></details>
+<details><summary>Which credentials are covered?</summary><p>Degrees, diplomas, certificates, transcripts and school leaving certificates from primary, junior and senior secondary schools, colleges, technical institutes and universities.</p></details>
+<details><summary>What if a credential is issued in error?</summary><p>The issuing institution can revoke it. Every verifier then sees it as revoked.</p></details>
+<details><summary>Can owners get a paper copy?</summary><p>Yes. With a Hardcopy Plus plan, an owner requests a copy. If the institution approves, the owner downloads it.</p></details></div></section>
+<footer><div class="w" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px"><span><b style="color:#fff">Attest</b> · Academic credentials, attested. Prototype with simulated data.</span><a href="auth.html?role=owner&mode=signin">Platform owner sign-in</a></div></footer>
+<script src="js/config.js"></script><script src="js/store.js"></script><script>
+$("#mk").innerHTML=MARK;$("#s1").innerHTML=sealSVG("a3f9c1d27b44e8905f6a12cd3e7b8801",54);
+const B={admin:"Register and subscribe",student:"Claim with your code",employer:"Verify and print",regulator:"Audit with dashboards"};
+$("#rl").innerHTML=["admin","student","employer","regulator"].map(k=>{const r=ROLES[k];return'<a class="rc" style="--c:'+r.c+'" href="auth.html?role='+k+'&mode=signup"><h3>'+r.n+'</h3><p>'+r.does+'</p><ul>'+r.allow.map(a=>"<li>"+a+"</li>").join("")+'</ul><b>'+B[k]+' →</b></a>'}).join("");
+Store.ready.then(()=>{const m=r=>Math.min(...PLANS[r].map(p=>Store.price(p))),L={admin:["Institution","year","Issue, revoke and approve hardcopies"],student:["Credential owner","month","Free to hold and share. Plus for hardcopies"],employer:["Verifier","month","Verify and print reports"],regulator:["Regulator","month","Full audit suite"]};
+ $("#pp").innerHTML=Object.keys(L).map(r=>'<div class="card price"><h3>'+L[r][0]+'</h3><div class="n">$'+m(r)+'</div><small>from, per '+L[r][1]+'</small><p style="margin-top:10px">'+L[r][2]+'</p></div>').join("")})</script></body></html>
